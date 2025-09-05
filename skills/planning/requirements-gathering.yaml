@@ -1,0 +1,182 @@
+# Requirements Gathering (General) - Enhanced
+# -------------------------------------------
+# Foundation skill with workflow integration and sequential thinking
+
+meta:
+  version: 0.2.0
+  name: Requirements Gathering (General) - Enhanced
+  category: planning
+  language: en-US
+
+goal: Transform vague user requests into clear, actionable requirements with measurable acceptance criteria, using systematic workflow management and deep reflection.
+
+workflow_integration: |
+  Upon starting this skill, add these tasks to todos.md:
+  
+  ## Current Phase: Requirements Gathering
+  - [ ] Read and understand the initial user request
+  - [ ] Research the problem domain thoroughly
+  - [ ] Conduct requirements interview/clarification
+  - [ ] Use sequential thinking to analyze and validate requirements
+  - [ ] Document comprehensive requirements specification
+  - [ ] Get user confirmation on requirements
+  - [ ] Use sequential thinking to reflect on requirements quality
+  - [ ] Update todos with spec planning phase tasks
+  - [ ] Mark requirements gathering complete
+
+research_methodology: |
+  Before gathering requirements:
+  1. Research the problem domain to understand context
+  2. Look for industry standards and common approaches
+  3. Identify typical constraints and limitations
+  4. Study similar projects for requirement patterns
+  5. Research stakeholder analysis techniques
+  6. Understand common requirement gathering pitfalls
+
+instructions: |
+  1. Business and customer understanding:
+     - Who is the target customer? (demographics, behavior, needs)
+     - How many customers are expected? (current and projected scale)
+     - What's the customer acquisition strategy?
+     - What's the business model and revenue expectations?
+     - What does success look like to them?
+     - What constraints or limitations exist?
+  
+  2. Scale and performance context:
+     - Expected user load (concurrent users, daily/monthly active)
+     - Data volume expectations and growth projections
+     - Geographic distribution and localization needs
+     - Performance requirements based on user expectations
+     - Scalability timeline and growth milestones
+  
+  2. Domain research and context gathering:
+     - Research the problem domain thoroughly
+     - Understand industry standards and best practices
+     - Identify common solutions and their trade-offs
+     - Look for regulatory or compliance requirements
+     - Study user behavior patterns in this domain
+  
+  3. Systematic requirements elicitation:
+     - Functional requirements (what the system must do)
+     - Non-functional requirements (performance, security, usability)
+     - Constraints (budget, time, technology, regulatory)
+     - Assumptions and dependencies
+     - Success criteria and metrics
+  
+  4. Sequential thinking: Requirements analysis
+     - Use sequential thinking tool to analyze requirements for:
+       * Completeness and consistency
+       * Feasibility and realistic scope
+       * Potential conflicts or ambiguities
+       * Missing stakeholder perspectives
+       * Risk areas and unknowns
+  
+  5. Requirements validation and refinement:
+     - Cross-check requirements against user goals
+     - Identify and resolve conflicts or gaps
+     - Prioritize requirements by importance and urgency
+     - Validate assumptions with user/stakeholders
+     - Refine based on analysis insights
+  
+  6. Documentation and confirmation:
+     - Use artifacts tool to create comprehensive requirements document
+     - Present back to user for validation through the artifact
+     - Incorporate feedback and corrections by updating the artifact
+     - Get explicit confirmation before proceeding
+     - Save final requirements.md to filesystem for project reference
+  
+  7. Sequential thinking: Quality reflection
+     - Reflect on requirements gathering process
+     - Identify potential issues or red flags
+     - Consider what might have been missed
+     - Plan for requirements evolution during development
+
+sequential_thinking_prompts: |
+  Use these prompts with sequential thinking tool:
+  
+  **Requirements Analysis:**
+  "Analyze these requirements for completeness, feasibility, and potential issues. Consider:
+  - Are there any conflicting requirements?
+  - What assumptions are being made?
+  - What could go wrong if we proceed with these requirements?
+  - Are there any missing stakeholder perspectives?
+  - How realistic is the scope given typical project constraints?"
+  
+  **Quality Reflection:**
+  "Reflect on the quality of these requirements:
+  - How confident am I that these requirements capture the user's true needs?
+  - What questions do I still have?
+  - What areas seem under-specified or risky?
+  - How well do these requirements set up the project for success?"
+
+tools:
+  - conversation
+  - web_search
+  - file_editor
+  - sequential-thinking
+
+output_format: |
+  Create a requirements document under `/fern-agent/memory/current-task/requirements.md` with:
+  
+  ## Project Overview
+  - Problem statement and context
+  - Success criteria and business value
+  - Key stakeholders and their needs
+  - High-level scope and boundaries
+  
+  ## Functional Requirements
+  - Core features and capabilities
+  - User workflows and use cases
+  - Data requirements and processing
+  - Integration and API needs
+  
+  ## Non-Functional Requirements
+  - Performance and scalability expectations
+  - Security and privacy requirements
+  - Usability and accessibility needs
+  - Compatibility and platform requirements
+  
+  ## Constraints and Assumptions
+  - Time and budget limitations
+  - Technology preferences/restrictions
+  - Regulatory and compliance needs
+  - Dependencies on external systems
+  - Key assumptions requiring validation
+  
+  ## Success Criteria
+  - Measurable success metrics
+  - User acceptance criteria
+  - Performance benchmarks
+  - Business value indicators
+  
+  ## Risk Assessment
+  - Identified risks and mitigation strategies
+  - Areas of uncertainty requiring investigation
+  - Assumptions that could prove incorrect
+  - Dependencies that could cause delays
+  
+  ## Sequential Thinking Insights
+  - Key concerns identified through analysis
+  - Potential issues and mitigation ideas
+  - Areas requiring deeper investigation
+  - Validation checkpoints for development
+
+success_criteria:
+  - Requirements are complete and unambiguous
+  - User needs and constraints clearly understood
+  - Success criteria are specific and measurable
+  - Risks and assumptions explicitly identified
+  - Requirements validated with user/stakeholders
+  - Sequential thinking insights captured
+  - Clear foundation laid for spec planning
+  - Workflow properly updated for next phase
+
+common_failure_modes:
+  - Not using sequential thinking to analyze requirements
+  - Accepting vague or ambiguous statements
+  - Missing non-functional requirements
+  - Not validating assumptions with users
+  - Failing to identify constraints early
+  - Not considering all stakeholder perspectives
+  - Requirements too broad or unfocused
+  - Not updating workflow todos properly

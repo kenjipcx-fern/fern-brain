@@ -1,0 +1,148 @@
+# Skill Assignment Workflow
+# ------------------------
+# Map available skills to task requirements and identify gaps
+
+meta:
+  version: 0.1.0
+  name: Skill Assignment Workflow  
+  category: planning
+  language: en-US
+
+goal: Map available skills from the knowledge base to identified capability requirements and create a comprehensive skill gap analysis.
+
+workflow_integration: |
+  After task decomposition, add these tasks to todos.md:
+  
+  ## Current Phase: Skill Assignment
+  - [ ] Load current skill inventory from knowledge base
+  - [ ] Map available skills to feature requirements
+  - [ ] Identify best skill matches for each capability
+  - [ ] Document skill gaps and missing capabilities
+  - [ ] Prioritize skill gaps by criticality
+  - [ ] Use sequential thinking to validate assignments
+  - [ ] Create final task-plan.md with skill assignments
+  - [ ] Trigger skill creation for critical gaps
+  - [ ] Update todos with execution or skill creation tasks
+
+instructions: |
+  1. Skill inventory analysis:
+     - Load skills/index.json to get complete skill catalog
+     - Review skill categories and available capabilities
+     - Note skill confidence levels and recent usage
+     - Identify skills that might need updating
+     - Check for deprecated or low-confidence skills
+  
+  2. Capability-to-skill mapping:
+     - For each capability requirement from task decomposition:
+       * Search skill library for matching capabilities
+       * Evaluate skill suitability and confidence levels
+       * Consider skill prerequisites and dependencies
+       * Note multiple skill options where available
+       * Assess whether skills need customization
+  
+  3. Skill assignment optimization:
+     - Choose best skills for each capability requirement
+     - Prefer higher-confidence skills when available
+     - Consider skill reuse across multiple tasks
+     - Balance between familiar skills and learning opportunities
+     - Plan for skill improvement through usage
+  
+  4. Gap analysis and prioritization:
+     - Document capability requirements with no matching skills
+     - Assess impact of each gap on project completion
+     - Identify gaps on critical path vs nice-to-have
+     - Evaluate if existing skills can be adapted/extended
+     - Check if gaps can be filled with research vs new skills
+  
+  5. Skill creation planning:
+     - For each critical gap, plan skill creation approach
+     - Research available resources and learning materials
+     - Estimate effort required for skill development
+     - Identify which gaps to tackle first
+     - Plan for skill validation and testing
+  
+  6. Sequential thinking: Assignment validation
+     - Use sequential thinking to analyze skill assignments:
+       * Are skill assignments realistic given confidence levels?
+       * Could different skill combinations work better?
+       * Are there hidden dependencies between skills?
+       * What are the risks of the current assignments?
+       * Should any low-confidence skills be avoided?
+  
+  7. Final task plan creation:
+     - Create comprehensive task-plan.md with skill assignments
+     - Include skill gaps as skill creation tasks
+     - Set up dependency chains including skill creation
+     - Plan execution order considering skill availability
+     - Document skill assignment rationale and alternatives
+
+skill_matching_criteria: |
+  Evaluate skills based on:
+  
+  **Capability Match:**
+  - Does the skill address the required capability?
+  - Is the skill scope appropriate for the task?
+  - Are there any missing aspects?
+  
+  **Confidence and Quality:**
+  - What's the skill confidence level?
+  - How recently was it used successfully?
+  - Are there known limitations or issues?
+  
+  **Prerequisites and Dependencies:**
+  - Are prerequisite skills available?
+  - Do skill dependencies align with project structure?
+  - Are there circular dependencies to avoid?
+  
+  **Context Fit:**
+  - Is the skill appropriate for the technology stack?
+  - Does it match the project complexity level?
+  - Are there better alternatives available?
+
+output_format: |
+  Create a skill assignment document:
+  
+  ## Skill Assignment Summary
+  - Total capability requirements identified
+  - Skills successfully assigned  
+  - Critical skill gaps requiring creation
+  - Assignment confidence assessment
+  
+  ## Feature Skill Mapping
+  For each feature/epic:
+  - Required capabilities
+  - Assigned skills with confidence levels
+  - Alternative skill options
+  - Dependencies and prerequisites
+  
+  ## Skill Gap Analysis
+  - Missing capabilities and impact assessment
+  - Critical vs non-critical gaps
+  - Skill creation priority order
+  - Estimated effort for gap resolution
+  
+  ## Risk Assessment
+  - Low-confidence skill assignments
+  - Potential skill conflicts or issues
+  - Mitigation strategies
+  - Fallback options
+  
+  ## Next Steps
+  - Skills ready for immediate use
+  - Skills requiring creation (priority order)
+  - Skills needing updates or improvements
+  - Execution readiness assessment
+
+tools:
+  - file_editor
+  - sequential-thinking
+  - memory_search
+
+success_criteria:
+  - All capability requirements have skill assignments or identified gaps
+  - Skill confidence levels appropriate for task criticality
+  - Skill gaps prioritized by project impact
+  - Dependencies between skills properly mapped
+  - Alternative options identified for risky assignments
+  - Clear plan for addressing skill gaps
+  - Task plan ready for execution or skill creation

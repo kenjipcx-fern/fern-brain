@@ -1,0 +1,236 @@
+# Task Decomposition (Advanced)
+# -----------------------------
+# Break down technical specs into parallelizable tasks with clear input/output contracts
+
+meta:
+  version: 0.1.0
+  name: Task Decomposition (Advanced)
+  category: planning
+  language: en-US
+
+goal: Transform technical specifications into a dependency graph of executable tasks optimized for parallelization, with clear acceptance criteria and input/output contracts.
+
+workflow_integration: |
+  Upon starting this skill, add these tasks to todos.md:
+  
+  ## Current Phase: Task Decomposition
+  - [ ] Analyze spec and identify feature boundaries
+  - [ ] Map required skills to each feature
+  - [ ] Create dependency graph between tasks
+  - [ ] Optimize for parallelization opportunities
+  - [ ] Define clear input/output contracts for each task
+  - [ ] Create detailed acceptance criteria
+  - [ ] Use sequential thinking to validate decomposition
+  - [ ] Create execution plan with priority ordering
+  - [ ] Update todos with execution phase tasks
+  - [ ] Mark task decomposition complete
+
+research_methodology: |
+  Before decomposing tasks:
+  1. Study the technical spec and system architecture
+  2. Identify natural feature and component boundaries
+  3. Understand data dependencies and flow requirements
+  4. Research parallelization patterns for similar systems
+  5. Map available skills to required capabilities
+  6. Study dependency management best practices
+
+instructions: |
+  1. Feature-based epic breakdown:
+     - Identify distinct features from technical spec
+     - Break each feature into logical implementation components
+     - Group related functionality into cohesive epics
+     - Define feature boundaries and interfaces
+     - Map features to user stories and business value
+  
+  2. Capability requirement analysis:
+     - For each epic, identify what types of capabilities are needed
+     - Define abstract skill requirements (e.g., "authentication", "database setup")
+     - Specify the level of complexity required
+     - Identify integration points between capabilities
+     - Note any special requirements or constraints
+  
+  3. Dependency mapping between features:
+     - Map data dependencies between epics
+     - Identify blocking vs non-blocking relationships
+     - Create dependency chains for features
+     - Find opportunities for parallel development
+     - Identify critical path through feature dependencies
+  
+  4. Skill assignment from knowledge base:
+     - Search available skills for each capability requirement
+     - Match skill capabilities to epic requirements
+     - Assign specific skills to implementation tasks
+     - Note skill confidence levels and suitability
+     - Identify multiple skill options where available
+  
+  5. Skill gap analysis:
+     - Identify capability requirements with no matching skills
+     - Assess criticality of missing capabilities
+     - Evaluate if existing skills can be adapted
+     - Document skill gaps for creation workflow
+     - Prioritize skill creation based on blocking dependencies
+  
+  6. Task specification and contracts:
+     For each epic with assigned skills:
+     - Define specific implementation tasks
+     - Specify required inputs and expected outputs
+     - Create clear acceptance criteria
+     - Estimate effort based on skill complexity
+     - Define handoff points between tasks
+  
+  7. Parallelization optimization:
+     - Group independent tasks for parallel execution
+     - Minimize blocking dependencies where possible
+     - Plan for maximum development efficiency
+     - Consider resource constraints and skill availability
+     - Optimize critical path for minimum completion time
+  
+  8. Sequential thinking: Decomposition validation
+     - Use sequential thinking to analyze the decomposition:
+       * Are all features covered by tasks?
+       * Do skill assignments make sense?
+       * Are there better skill combinations available?
+       * What skill gaps are most critical to address?
+       * Is the dependency structure optimized?
+
+decomposition_dimensions: |
+  Break down tasks across these dimensions:
+  
+  **Feature Dimension:**
+  - Authentication system
+  - User dashboard
+  - Chat functionality
+  - Payment processing
+  - Admin panel
+  - API endpoints
+  
+  **Skill Dimension:**
+  - Database setup and schema
+  - Backend API development
+  - Frontend component creation
+  - Authentication implementation
+  - Real-time functionality
+  - Deployment and infrastructure
+  
+  **Parallelizability Dimension:**
+  - Independent features (can work in parallel)
+  - Shared dependencies (need coordination)
+  - Critical path items (blocking other work)
+  - Infrastructure tasks (enable other work)
+
+task_contract_template: |
+  Each task should follow this contract format:
+  
+  ```yaml
+  task_id: auth-backend-implementation
+  feature: authentication
+  skills_required: 
+    - auth-implementation-nextauth
+    - database-setup-postgresql
+  
+  prerequisites:
+    - database-schema-created
+    - environment-variables-configured
+  
+  inputs:
+    - database_connection_string: "PostgreSQL connection URL"
+    - auth_config: "OAuth provider configurations"
+    - user_schema: "Database user table structure"
+  
+  work_description: |
+    Implement NextAuth.js authentication system with:
+    - Google and GitHub OAuth providers
+    - JWT token management
+    - Session handling
+    - User registration and login endpoints
+  
+  outputs:
+    - auth_api_endpoints: "POST /auth/login, /auth/logout, /auth/register"
+    - jwt_token_format: "Standardized JWT payload structure"
+    - auth_middleware: "Express middleware for route protection"
+    - user_session_format: "Session data structure"
+  
+  acceptance_criteria:
+    - [ ] User can register with Google OAuth
+    - [ ] User can register with GitHub OAuth
+    - [ ] JWT tokens are properly generated and validated
+    - [ ] Protected routes reject unauthenticated requests
+    - [ ] Session data persists across requests
+    - [ ] Error handling for failed authentication
+    - [ ] Rate limiting on auth endpoints
+  
+  dependencies: []  # Tasks that depend on this completion
+  
+  estimated_effort: "4-6 hours"
+  complexity: "medium"
+  can_parallelize_with: ["frontend-auth-ui", "database-user-management"]
+  ```
+
+tools:
+  - file_editor
+  - sequential-thinking
+  - memory_search
+  - artifacts
+
+output_format: |
+  Create a comprehensive task decomposition document:
+  
+  ## Decomposition Overview
+  - Total number of tasks identified
+  - Feature breakdown summary
+  - Skill distribution analysis
+  - Critical path identification
+  - Parallelization opportunities
+  
+  ## Feature-Task Mapping
+  For each feature:
+  - Task breakdown
+  - Required skills
+  - Dependencies within feature
+  - Integration points
+  
+  ## Task Dependency Graph
+  - Visual representation of dependencies
+  - Critical path through the graph
+  - Parallel work streams identified
+  - Blocking vs non-blocking dependencies
+  
+  ## Task Specifications
+  For each task:
+  - Complete task contract (see template)
+  - Input/output specifications
+  - Acceptance criteria
+  - Effort estimates
+  
+  ## Execution Plan
+  - Phase-based execution strategy
+  - Parallel work streams
+  - Integration checkpoints
+  - Risk mitigation plans
+  - Success metrics and validation
+  
+  ## Sequential Thinking Analysis
+  - Quality validation of decomposition
+  - Identified risks and mitigations
+  - Optimization opportunities
+  - Lessons for future decomposition
+
+success_criteria:
+  - All features covered by specific tasks
+  - Input/output contracts align between dependent tasks
+  - Maximum parallelization opportunities identified
+  - Acceptance criteria are specific and measurable
+  - Critical path optimized for minimum completion time
+  - Skill requirements mapped to available capabilities
+  - Dependency graph is complete and validated
+  - Execution plan enables incremental delivery
+
+common_failure_modes:
+  - Tasks too large or vague to execute
+  - Missing dependencies between tasks
+  - Input/output contracts don't align
+  - Not optimizing for parallelization
+  - Acceptance criteria not measurable
+  - Underestimating task complexity
+  - Not considering skill availability
+  - Missing integration and testing tasks

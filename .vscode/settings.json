@@ -1,0 +1,7 @@
+{
+    "editor.wordWrap": "on",
+    "workbench.editor.wrapTabs": true,
+    "editor.wrappingIndent": "indent",
+    "editor.wrappingStrategy": "advanced",
+    "diffEditor.wordWrap": "on"
+}

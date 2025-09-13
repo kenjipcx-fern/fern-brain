@@ -1,0 +1,3 @@
+# Validate and Verify
+Read the `contract-of-done.md` and go through each required flow, verify if the resultant app has been fulfilled by the app, create another file called `validation.md` and note down your findings for each feature (was it completed, does it work well? if not how much?
+Ensure that the UI UX flow stays consistent with the one in the `contract-of-done.md` too, if any of these are not aligned, just accept that you have failed your job, detail your findings within `validation.md`

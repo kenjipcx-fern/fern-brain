@@ -1,0 +1,52 @@
+---
+name: "Setup Convex Authentication"
+description: "Set up Convex Auth for user authentication including login, signup, and session management. This provides the foundation for all user-related features."
+labels: ["auth", "backend", "setup"]
+priority: "high"
+estimated_days: 2
+dependencies: ["project-setup"]
+blocks: ["login-ui", "signup-ui", "protected-routes"]
+
+# Contract Details
+acceptance_criteria:
+  - "Convex Auth is installed and configured in the project"
+  - "Authentication schema is defined in convex/auth.config.ts"
+  - "Users can be created, authenticated, and sessions managed"
+  - "Auth endpoints are working and returning proper responses"
+  - "Environment variables are set up for auth providers"
+
+# Testing & Verification
+how_to_test:
+  functional_tests:
+    - "Test user creation via Convex dashboard"
+    - "Verify authentication endpoints respond correctly"
+    - "Test session creation and validation"
+  edge_cases:
+    - "Test with invalid credentials"
+    - "Test session expiration handling"
+    - "Test concurrent login attempts"
+  qa_checklist:
+    - "Auth config file exists and is properly formatted"
+    - "Environment variables are documented in .env.example"
+    - "No auth secrets are committed to git"
+    - "Convex functions deploy successfully"
+
+# Resources & Knowledge
+urls:
+  documentation: 
+    - "https://docs.convex.dev/auth"
+    - "https://docs.convex.dev/auth/config"
+  examples:
+    - "https://github.com/get-convex/convex-auth/tree/main/examples"
+  references:
+    - "https://docs.convex.dev/auth/providers"
+
+# Implementation Notes
+technical_notes: "Use Convex Auth package for OAuth providers. Start with email/password auth, can add OAuth later. Make sure to set up proper error handling for auth failures."
+gotchas: "Remember to set up NEXTAUTH_SECRET in production environment. Auth config changes require redeploying Convex functions."
+
+# Metadata
+assignee: ""
+created_date: "2024-12-20"
+due_date: "2024-12-22"
+status: "todo"

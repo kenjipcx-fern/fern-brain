@@ -1,0 +1,37 @@
+---
+name: ""
+description: ""
+labels: []
+priority: "medium" # low, medium, high, critical
+estimated_days: 0
+dependencies: []
+blocks: []
+
+# Contract Details
+acceptance_criteria:
+  - ""
+
+# Testing & Verification
+how_to_test:
+  functional_tests:
+    - ""
+  edge_cases:
+    - ""
+  qa_checklist:
+    - ""
+
+# Resources & Knowledge
+urls:
+  documentation: []
+  examples: []
+  references: []
+
+# Implementation Notes
+technical_notes: ""
+gotchas: ""
+
+# Metadata
+assignee: ""
+created_date: ""
+due_date: ""
+status: "todo" # todo, in_progress, blocked, review, done

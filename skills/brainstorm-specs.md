@@ -19,7 +19,7 @@ Transform raw ideas into **well-defined user stories** and a clear specification
 - Pitch the spec back to the user to align expectations and fix misunderstandings.  
 
 # Todos
-Add these to your [todos.md](memory/current-tasks/task-[id]/todos.md)  
+Add these as subtasks to your current todo in [todos.md](memory/current-tasks/task-[id]/todos.md)  
 - [ ] Transform raw ideas into detailed user stories  
 - [ ] Verify how the intended solution helps the user and define its promise  
 - [ ] Continuously ask clarifying questions on problem, solution, and features  
@@ -27,7 +27,7 @@ Add these to your [todos.md](memory/current-tasks/task-[id]/todos.md)
 - [ ] Pitch the specs to the user for alignment and revise as needed  
 - [ ] Create `specs.md` with problem, user stories, solution, and acceptance criteria at the 
 - [ ] Transform the acceptance criteria into a checklist with the name `contract-of-done.md`
-- [ ] Refer back to your [todos.md](memory/current-tasks/task-[id]/todos.md) to see what you should be doing next  
+- [ ] Delete the parent todo along with all the subtasks from todos.md and move to the next todo 
 
 # Tips
 ## Best Practices

@@ -9,19 +9,18 @@ outputs: Updated todos.md with build-feature and test-feature tasks for each tic
 
 # Instructions
 - Read through your todos.md to identify ticket references
-- For each ticket found, add two todos to the list:
-  1. "Build ticket using [build-feature](/skills/build-feature) for ticket [ticket-id]"
-  2. "Test ticket using [test-feature](/skills/test-feature) for ticket [ticket-id]"
+- For each ticket found, add one todo to the list:
+  1. "Build ticket using [build-feature](../skills/build-feature) for ticket [ticket-id]"
 - Process tickets in order (e.g., if tickets 001, 002, 003 exist, add build+test pairs for each)
 - This skill only adds the todos - the actual building and testing is handled by the respective skills
 
 # Todos
+Add these as subtasks to your current todo in [todos.md](memory/current-tasks/task-[id]/todos.md)  
 - [ ] Read current todos.md to identify all ticket references
 - [ ] For each ticket reference, locate the ticket file in active-tasks/task-[id]/tickets
-- [ ] Add build-feature todo for each ticket: "Build ticket using [build-feature](/skills/build-feature) for ticket [ticket-id]"
-- [ ] Add test-feature todo for each ticket: "Test ticket using [test-feature](/skills/test-feature) for ticket [ticket-id]"
+- [ ] Add build-feature todo for each ticket: "Build ticket using [build-feature](../skills/build-feature.md) for ticket [ticket-id]"
 - [ ] Ensure todos are added in logical order (build before test for each ticket)
-- [ ] Refer back to your [todos.md](memory/current-tasks/task-[id]/todos.md) to see what you should be doing next
+- [ ] Delete the parent todo along with all the subtasks from todos.md and move to the next todo 
 
 # Tips
 ## Best Practices
@@ -34,7 +33,7 @@ outputs: Updated todos.md with build-feature and test-feature tasks for each tic
 ## Known Pitfalls & Workarounds
 - Pitfall: Missing ticket IDs → Workaround: Ensure ticket references in todos.md are clear and complete
 - Pitfall: Wrong todo order → Workaround: Always add build-feature before test-feature for each ticket
-- Pitfall: Inconsistent naming → Workaround: Use exact format "Build ticket using [build-feature](/skills/build-feature) for ticket [ticket-id]"
+- Pitfall: Inconsistent naming → Workaround: Use exact format "Build ticket using [build-feature](../skills/build-feature.md) for ticket [ticket-id]"
 
 # Testing
 ## How to Test

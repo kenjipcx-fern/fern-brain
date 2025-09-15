@@ -11,9 +11,10 @@ outputs: Describe the outputs for the skill
 - Replace with high level instructions/strategy to perform the skill
 
 # Todos
+Add these as subtasks to your current todo in [todos.md](memory/current-tasks/task-[id]/todos.md)  
 - [ ] Add the todos you want the skill to execute here
 - [ ] Other todos you want to add to your todos.md
-- [ ] Refer back to your [todos.md](memory/current-tasks/task-[id]/todos.md) to see what you should be doing next
+- [ ] Complete the parent todo and move to the next todo 
 
 # Tips
 ## Best Practices

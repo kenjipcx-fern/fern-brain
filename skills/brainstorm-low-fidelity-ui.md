@@ -26,7 +26,7 @@ After refinement with the user, create a `contract-of-done.md` file capturing:
 Share this document with the user via Slack.  
 
 # Todos
-Add these to your [todos.md](memory/current-tasks/task-[id]/todos.md)  
+Add these as subtasks to your current todo in [todos.md](memory/current-tasks/task-[id]/todos.md)  
 - [ ] Start a project and set up the Shadcn MCP server  
 - [ ] Search for flow inspirations on Mobbin and analyze good/bad elements  
 - [ ] Prototype layouts with ASCII art or diagrams  
@@ -37,7 +37,7 @@ Add these to your [todos.md](memory/current-tasks/task-[id]/todos.md)
 - [ ] Add your UI checklist to `contract-of-done.md` with agreed layouts, flows, component choices, and checklist  
 - [ ] Create `preview-designs.md` with agreed layouts, flows, component choices, and checklist  
 - [ ] Send the contract of done to the user via Slack
-- [ ] Refer back to your [todos.md](memory/current-tasks/task-[id]/todos.md) to see what you should be doing next  
+- [ ] Delete the parent todo along with all the subtasks from todos.md and move to the next todo 
 
 # Tips
 ## Best Practices

@@ -21,6 +21,7 @@ outputs: ["tickets/ folder with individual tickets", "updated todos.md with task
 - Update todos.md with ticket references in dependency-aware sequence
 
 # Todos
+Add these as subtasks to your current todo in [todos.md](memory/current-tasks/task-[id]/todos.md)  
 - [ ] Read and analyze the input plan document
 - [ ] Create scaffolding ticket as the root dependency (using `pnpx create-convex` for Convex projects)
 - [ ] Identify top-level features from the plan
@@ -30,11 +31,11 @@ outputs: ["tickets/ folder with individual tickets", "updated todos.md with task
 - [ ] Build complete dependency graph with scaffolding as root node
 - [ ] Run topological sort on dependency graph to determine execution order
 - [ ] Create tickets/ folder if it doesn't exist
-- [ ] Generate ticket files in topological order with dependency information, use the `resources/issue-template.yaml` as a template, prefix them with a ticket id that can sort them by order of execution
-- [ ] Write clear descriptions, acceptance criteria, and QA steps for each ticket
-- [ ] Document dependencies and blockers for each ticket
+- [ ] Generate ticket files in topological order with dependency information, use the [issue template](../resources/issue-template.yaml) as a template, prefix them with a ticket id that can sort them by order of execution
+    - [ ] Write clear descriptions, acceptance criteria, and QA steps for each ticket
+    - [ ] Document dependencies and blockers for each ticket
 - [ ] Create dependency-aware todos.md with optimal task sequence
-- [ ] Refer back to your [todos.md](memory/current-tasks/task-[id]/todos.md) to see what you should be doing next
+- [ ] Delete the parent todo along with all the subtasks from todos.md and move to the next todo 
 
 # Tips
 ## Best Practices

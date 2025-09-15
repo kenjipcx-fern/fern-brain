@@ -18,13 +18,13 @@ outputs: ["impl-plan.md with features, tools, and high-level implementation inst
 - Organize plan into phases (scaffolding → core features → integrations → polish)
 
 # Todos
+Add these as subtasks to your current todo in [todos.md](memory/current-tasks/task-[id]/todos.md)  
 - [ ] Fetch specs.md, contract-of-done.md, and design.md
 - [ ] Perform system design and document reasoning for each stack/tool choice
-- [ ] Go through Convex components and mark which features to include
+- [ ] Design the backend using the [use-convex-dev](../skills/design-convex-backend.md) skill to design the backend
 - [ ] Write impl-plan.md with features, tools, implementation notes, and links
-- [ ] Store resource URLs for each feature in tool memory
 - [ ] Summarize the plan into high-level tasks in todos.md
-- [ ] Refer back to your [todos.md](memory/current-tasks/task-[id]/todos.md) to see what you should be doing next
+- [ ] Delete the parent todo along with all the subtasks from todos.md and move to the next todo 
 
 # Tips
 ## Best Practices

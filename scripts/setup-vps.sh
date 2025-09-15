@@ -37,3 +37,6 @@ claude mcp add -s user sequential-thinking -- npx -y @modelcontextprotocol/serve
 
 echo "Setup complete!"
 echo "Please restart your terminal or run 'source ~/.bashrc' (or ~/.zshrc) to use the newly installed tools."
+
+# Move CLAUDE.md to ~/.claude/CLAUDE.md
+mv CLAUDE.md ~/.claude/CLAUDE.md

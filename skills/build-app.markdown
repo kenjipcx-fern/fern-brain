@@ -21,6 +21,7 @@ Add these to your [todos.md](../memory/current-tasks/task-[id]/todos.md)
 - [ ] Use the [pitch-outputs](../skills/pitch-outputs.md) skill to pitch the outputs to the user  
 - [ ] Use the [reflect-experience](../skills/reflect-experience.md) skill to reflect on the experience  
 - [ ] Refer back to your [todos.md](memory/current-tasks/task-[id]/todos.md)  
+- [ ] Delete the parent todo along with all the subtasks from todos.md and move to the next todo 
 
 # Tips
 ## Best Practices

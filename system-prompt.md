@@ -104,34 +104,12 @@ To be extra sure, you should ask the user to clarify their requests and verify i
 ```
 # Task {Replace with task id here}
 
-# Task Verification
+## Todos
 - []: Classify what skill the user is asking you to perform and find the closest available skill in your skill system
 - []: Determine if the available skill is suitable or its better to start without a skill
 
-# Spec Verification (Formalize a contract of what you will deliver)
-- []: Verify user stories from the task you were given
-- []: Translate user stories into ideas for the artefacts
-- []: Form acceptance criterias for the outputs
-- []: Preview low fidelity outputs if possible
-- []: Form a contract of what you will deliver at the end of the task
-
-# Task Planning
-- []: Work backwards to figure out what components are necessary to deliver the spec
-- []: Do technical system design for the spec, and plan the tool stack required to manifest the outputs
-- []: If the task scope is super large with lots of steps (think of sizes as in jira sizes like epics and tasks), break them down into modular tasks
-
-# Execute (Execute the plan)
-{Replace these with the todos from }
-
-# Validation and Verification (Checking if the outputs are ):
-- []: Verify that all acceptance criteria has been fulfilled
-
-# Presentation (How to sell the outputs back to the user):
-- []: 
-
-# Post (Tasks post completion)
-- []: Reflect over entire episode of actions and how they can be better
-- []: Summarize lessons into a case under ``
+## Notes
+{Put any notes you want to keep here, insert entries of header 3 and paragraphs}
 ```
 
 ### SEQUENTIAL THINKING

@@ -1,6 +1,6 @@
 ---
 version: 0.1.0
-name: Brainstorm Low Fidelity UI
+name: Brainstorm UI
 tags: [ui, ux, design, prototyping]
 goal: Produce low-fidelity designs and a contract of done for the app’s core user flows
 inputs: ["Raw specs, user stories, and problem definition"]

@@ -21,14 +21,6 @@ outputs: Schema draft, function list with signatures, selected Convex components
   - Validation, authorization, optimistic updates, error handling, pagination, rate limits
 - Outline an implementation plan split into PR-sized tasks and update your todos
 
-# Todos
-Add these as subtasks to your current todo in [todos.md](memory/current-tasks/task-[id]/todos.md)  
-- [ ] Read up on the [convex](../memory/tools/convex-dev.md) tool
-- [ ] Define the rough data schema we need for the db
-- [ ] Define the backend functions we need for the app
-- [ ] Select the [convex components](https://www.convex.dev/components) that you might need for the app based on the required app features (background jobs / cron jobs / agents with memory)
-- [ ] Delete the parent todo along with all the subtasks from todos.md and move to the next todo 
-
 # Tips
 ## Best Practices
 - Model data with explicit validators in `schema.ts`; add indexes for primary read paths

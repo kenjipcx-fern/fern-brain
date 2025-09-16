@@ -14,14 +14,6 @@ outputs: Updated todos.md with build-feature and test-feature tasks for each tic
 - Process tickets in order (e.g., if tickets 001, 002, 003 exist, add build+test pairs for each)
 - This skill only adds the todos - the actual building and testing is handled by the respective skills
 
-# Todos
-Add these as subtasks to your current todo in [todos.md](memory/current-tasks/task-[id]/todos.md)  
-- [ ] Read current todos.md to identify all ticket references
-- [ ] For each ticket reference, locate the ticket file in active-tasks/task-[id]/tickets
-- [ ] Add build-feature todo for each ticket: "Build ticket using [build-feature](../skills/build-feature.md) for ticket [ticket-id]"
-- [ ] Ensure todos are added in logical order (build before test for each ticket)
-- [ ] Delete the parent todo along with all the subtasks from todos.md and move to the next todo 
-
 # Tips
 ## Best Practices
 - Add build+test pairs for each ticket in sequence

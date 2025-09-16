@@ -17,16 +17,6 @@ outputs: Code edits (PR/diff), passing tests, updated docs/notes, next-step todo
 - Prepare PR with rationale, screenshots (if UI), and testing instructions.
 - Update todos and proceed to the next item.
 
-# Todos
-Add these as subtasks to your current todo in [todos.md](memory/current-tasks/task-[id]/todos.md)  
-- [ ] Read the ticket details
-- [ ] Locate where the code that needs to be changed should be
-- [ ] Analyze what needs to be implemented
-- [ ] Use the [Context7 MCP](../memory/tools/context7-mcp.md) to search for documentation (resolve-library-id → get-library-docs) and prefer latest version/current year
-- [ ] Implement the feature
-- [ ] Test the feature using the VibeTest MCP until the acceptance criteria are met
-- [ ] Delete the parent todo along with all the subtasks from todos.md and move to the next todo 
-
 # Tips
 ## Best Practices
 - Keep scope PR-sized; avoid overlapping concerns or refactors not required by the ticket

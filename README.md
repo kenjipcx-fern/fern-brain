@@ -34,7 +34,7 @@ Fern is an AI agent that builds software applications by:
 └─────────────────────────────────────────┘
 ```
 
-**System Prompt**: Core identity, workflow patterns, and skill execution framework
+**System Prompt**: Core identity, workflow patterns, and skill execution framework (see `system-prompt/system-prompt-single.md` for the single-agent prompt)
 **Skill System**: Prompt-based workflows storing best practices, pitfalls, and an index of relevant resources
 **Memory System**: Persistent knowledge partitioned into tool, skill, case, and working memory
 
@@ -75,11 +75,30 @@ Fern is an AI agent that builds software applications by:
 - **Case experiences**: Post-task learnings and patterns live in `memory/lessons/` and similar folders.
 - **Good enough today**: Filesystem-backed memory is simple, diffable, and easy to sync.
 
-## 🚀 Install on a VPS
+## 🚀 Quickstart on a fresh VPS
 
-- Clone this repo onto your VPS.
-- Run `scripts/setup-vps.sh` for baseline setup, or adapt it to your environment.
-- Point your agent to read from `skills/` and write to `memory/` and `*.todos.md`.
+1. Clone the repo and enter the project directory:
+   - Using HTTPS:
+     ```bash
+     git clone https://github.com/your-org/fern-brain.git
+     cd fern-brain
+     ```
+   - Or using SSH:
+     ```bash
+     git clone git@github.com:your-org/fern-brain.git
+     cd fern-brain
+     ```
+2. Run the setup script (installs fnm, Node 24, pnpm, Claude Code CLI):
+   ```bash
+   bash scripts/setup-vps.sh
+   ```
+3. Open a new shell (or `source ~/.zshrc` / `source ~/.bashrc`) so your PATH updates apply.
+4. Optional: To reset and re-run cleanly later, use the teardown script:
+   ```bash
+   bash scripts/teardown-vps.sh
+   ```
+
+Once set up, point your agent to read from `skills/` and write to `memory/` and `*.todos.md`.
 
 ### Build system prompts from sections
 

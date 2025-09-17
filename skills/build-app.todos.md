@@ -3,8 +3,8 @@
 - [ ] Read up the [Build App](./build-app.markdown) skill
 - [ ] Use the [brainstorm-specs](../skills/brainstorm-specs.md) skill to brainstorm the specs of the app  
 - [ ] Use the [brainstorm-low-fidelity-ui](../skills/brainstorm-low-fidelity-ui.md) skill to brainstorm the low fidelity UI  
-- [ ] Use the [create-impl-plan](../skills/create-impl-plan.md) skill to create the implementation plan of the app  
-- [ ] Read up on [Claude Code](../memory/tools/claude-code.md)  
+- [ ] Use the [create-impl-plan](../skills/create-impl-plan.md) skill to create the implementation plan of the app
+- [ ] Use the [decomp-task](../skills/decomp-task.md) skill to decompose the tasks of the implementation plan
 - [ ] Use the [execute-impl-plan](../skills/execute-impl-plan.md) skill to execute the implementation plan of the app  
 - [ ] Use the [test-app](../skills/test-app.md) skill to test the app  
 - [ ] Use the [pitch-outputs](../skills/pitch-outputs.md) skill to pitch the outputs to the user  

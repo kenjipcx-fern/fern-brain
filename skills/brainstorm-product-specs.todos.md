@@ -1,6 +1,6 @@
 # Todos
 
-- [ ] Read up the [Brainstorm Specs](./brainstorm-specs.md) skill
+- [ ] Read up the [Brainstorm Product Specs](./brainstorm-product-specs.md) skill
 - [ ] Transform raw ideas into detailed user stories  
 - [ ] Verify how the intended solution helps the user and define its promise  
 - [ ] Continuously ask clarifying questions on problem, solution, and features  

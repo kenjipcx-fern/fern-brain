@@ -20,7 +20,7 @@ except Exception:
 
 def build_single() -> str:
     return dedent(f"""
-        {shared.header_single}
+        # FERN AGENT SYSTEM PROMPT (Enhanced)
 
         {shared.context}
 
@@ -34,9 +34,9 @@ def build_single() -> str:
 
         {shared.memory_driven_planning}
 
-        {shared.memory_structure_single}
+        {shared.memory_structure}
 
-        {shared.system_helpers_intro}
+        ## SYSTEM HELPERS
 
         {shared.artefact_system}
 
@@ -45,6 +45,8 @@ def build_single() -> str:
         {single.skill_system_addendum}
 
         {shared.todos_system_single}
+
+        {shared.step_system}
 
         {shared.notes_system}
 
@@ -64,6 +66,8 @@ def build_subagents() -> str:
     return dedent(f"""
         {subagents.front_matter}
 
+        # FERN AGENT SYSTEM PROMPT (Enhanced)
+
         {shared.context}
 
         {shared.core_identity_subagents}
@@ -74,9 +78,9 @@ def build_subagents() -> str:
 
         {shared.memory_driven_planning}
 
-        {shared.memory_structure_subagents}
+        {shared.memory_structure}
 
-        {shared.system_helpers_intro}
+        ## SYSTEM HELPERS
 
         {subagents.subagents_system}
 
@@ -85,6 +89,8 @@ def build_subagents() -> str:
         {shared.skill_system_shared}
 
         {shared.todos_system_subagents}
+
+        {shared.step_system}
 
         {shared.notes_system}
 
@@ -95,6 +101,8 @@ def build_subagents() -> str:
         {shared.communication_style}
 
         {shared.capabilities_subagents}
+
+        {subagents.first_steps}
     """).strip() + "\n"
 
 

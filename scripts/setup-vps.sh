@@ -13,13 +13,16 @@ echo "Installing Node.js v24..."
 fnm install v24
 fnm use v24
 
-# Install pnpm
-echo "Installing pnpm..."
-curl -fsSL https://get.pnpm.io/install.sh | sh -
+# Enable pnpm via corepack (keeps npm intact)
+echo "Enabling pnpm via corepack..."
+corepack enable
+corepack prepare pnpm@latest --activate
 
-# Source pnpm to make it available in current session
-export PNPM_HOME="$HOME/.local/share/pnpm"
-export PATH="$PNPM_HOME:$PATH"
+# Verify tool availability
+echo "Verifying Node/npm/pnpm availability..."
+node -v
+npm -v
+pnpm -v
 
 # Install Claude Code CLI
 echo "Installing Claude Code CLI..."

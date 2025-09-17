@@ -24,18 +24,67 @@ Fern is an AI agent that builds software applications by:
                     ↓
 ┌─────────────────────────────────────────┐
 │         SKILL SYSTEM                    │
-│   YAML toolprints for capabilities     │
+│   Best practices • pitfalls • resource  │
+│   index • prompt-based workflows        │
 └─────────────────────────────────────────┘
                     ↓
 ┌─────────────────────────────────────────┐
 │        MEMORY SYSTEM                    │
-│   Cases, research cache, task state    │
+│   Tool • Skill • Case • Working memory  │
 └─────────────────────────────────────────┘
 ```
 
 **System Prompt**: Core identity, workflow patterns, and skill execution framework
-**Skill System**: Modular capabilities stored as YAML toolprints
-**Memory System**: Persistent knowledge and project state
+**Skill System**: Prompt-based workflows storing best practices, pitfalls, and an index of relevant resources
+**Memory System**: Persistent knowledge partitioned into tool, skill, case, and working memory
+
+## 🧠 Memory types (where things live)
+
+- **Tool memory**: How to use specific tools; indexes of useful links and notes → `memory/tools/`
+- **Skill memory**: The skill prompt itself plus its working notes and indexes → `skills/*.md` and `skills/*.todos.md`
+- **Case memory**: Episodic logs and reflections from past work → `memory/lessons/`
+- **Working memory**: Task-scoped state and todos → `active-tasks/task-[id]/*.md` and `skills/*.todos.md`
+
+## 📦 What this repo is
+
+- **Prompt store**: A simple, transparent place to author and version skills (prompts) in `skills/`.
+- **VPS-local memory**: A filesystem-first memory structure that lives entirely on your VPS (`memory/`, skill `*.todos.md`).
+- **Hive syncing via Git**: Multiple VPS agents can collaborate by committing/pushing tuned prompts and pulling updates.
+
+## 🐝 Hive mode via Git (distributed collaboration)
+
+- **Many agents, one repo**: Run agents on different VPSes. Each tunes skills (prompts/steps) while working.
+- **Share improvements**: Agents commit and push refined skills or new learnings; other nodes `git pull` to sync.
+- **Conflict = conversation**: When two agents change the same skill, normal Git conflict resolution becomes the review step.
+
+## 🧩 Skills are prompts (and usually steps)
+
+- **Skills = prompts**: Each file in `skills/` is a prompt that describes a capability or step.
+- **Composable**: Skills reference other skills to form execution plans.
+- **Stateful**: Each skill keeps its own working memory in a sibling `*.todos.md` file.
+
+## 🔌 Using these skills with other agents
+
+- **Copy-paste**: Copy the prompt content from `skills/*.md` directly into another agent's tool/skill.
+- **Dynamic read**: If this repo is mounted at the project root, an agent can read `skills/...` files on demand.
+- **Thin contract**: Prompts are plain text, so they work across frameworks (Fern, custom agents, etc.).
+
+## 🗂️ Working memory and case experiences
+
+- **Working memory (todos)**: Persistent task state lives alongside skills as `*.todos.md`.
+- **Case experiences**: Post-task learnings and patterns live in `memory/lessons/` and similar folders.
+- **Good enough today**: Filesystem-backed memory is simple, diffable, and easy to sync.
+
+## 🚀 Install on a VPS
+
+- Clone this repo onto your VPS.
+- Run `scripts/setup-vps.sh` for baseline setup, or adapt it to your environment.
+- Point your agent to read from `skills/` and write to `memory/` and `*.todos.md`.
+
+## 🗺️ Roadmap
+
+- **Vector search backend**: When needed, swap/augment the filesystem memory with a vector store for semantic recall.
+- **Auto-tuning loop**: Background agents that continuously test and tune prompts for specific skills, then push updates.
 
 ## Facts
 - Only one skill will be executed at the start of the task

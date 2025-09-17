@@ -81,6 +81,13 @@ Fern is an AI agent that builds software applications by:
 - Run `scripts/setup-vps.sh` for baseline setup, or adapt it to your environment.
 - Point your agent to read from `skills/` and write to `memory/` and `*.todos.md`.
 
+### Build system prompts from sections
+
+- Generate both prompts: `make prompts`
+- Single only: `make prompts-single`
+- Subagents only: `make prompts-subagents`
+- Or run the builder directly: `python3 system-prompt/builder.py --all`
+
 ## 🗺️ Roadmap
 
 - **Vector search backend**: When needed, swap/augment the filesystem memory with a vector store for semantic recall.

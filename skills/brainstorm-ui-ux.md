@@ -27,6 +27,10 @@ Work top-down from user stories to the minimum lovable flows. Focus only on key 
 - For each page, list candidate Shadcn components and ASCII placements
 - Capture screenshots of component examples if helpful
 
+5) Propose theme and components
+- Search up tweakcn for a suitable theme and note it down
+- Search up relevent components from shadcn, animate ui, aceternity ui, ai elements sdk that we would want to use in different pages and note them down
+
 Deliverables:
 - `ux-design.md`: flows, ASCII, inspirations, rationale
 - `ui-design.md`: pages, components, themes, screenshots

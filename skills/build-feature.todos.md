@@ -8,7 +8,7 @@
 - [ ] Stage 4: Run [search-online-examples](./search-online-examples.md) and [Context7 MCP](../memory/tools/context7-mcp.md) for docs
 - [ ] Stage 5: Draft solution with minimal, reversible steps
 - [ ] Stage 6: Implement feature with small, atomic commits
-- [ ] Stage 7: Test locally and via VibeTest MCP until criteria met
+- [ ] Stage 7: Test locally and via convex cli, convex dashboard, clicking around with computer use tools until criteria met
 - [ ] Stage 8: Prepare PR (rationale, screenshots, test steps)
 
 - [ ] Delete the parent todo along with all the subtasks from todos.md and move to the next todo 

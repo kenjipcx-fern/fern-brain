@@ -12,6 +12,8 @@ useful-for: Building full‑stack backends with real‑time data, server functio
 - Built‑in features: auth integrations, file storage, schedules/cron jobs, optimistic updates, and typed IDs.
 
 # Quick Start
+- Scaffold project with `pnpm create convex@latest`
+  - Use clerk for auth, it will set it all up for you
 - Install packages
   - `pnpm install convex`
 - Initialize local dev (creates `convex/` if missing)

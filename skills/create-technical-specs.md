@@ -1,6 +1,6 @@
 ---
 version: 0.1.0
-name: Create Implementation Plan
+name: Create Technical Specs
 tags: [planning, system design, implementation, convex, nextjs, vercel]
 goal: Transform specs and design into a system design and implementation plan for building the app
 inputs: ["specs.md", "contract-of-done.md", "design.md"]

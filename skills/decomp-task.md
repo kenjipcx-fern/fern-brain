@@ -12,7 +12,7 @@ outputs: ["tickets/ folder with ≤10 tickets", "updated todos.md with ticket re
 - Structure by **pages/flows**, not granular features.
 - **CRUD is bundled** per page (one ticket per page’s CRUD set).
 - **Integrations are split**: 1 ticket per external/complex integration (auth provider, payments, file storage, Convex component, webhooks, etc.).
-- **Scaffolding is its own ticket** (e.g., `pnpx create-convex`).
+- **Scaffolding is its own ticket** (e.g., `pnpm create convex@latest with clerk`).
 - Keep tasks **0.5–2 days** each; avoid dependency webs.
 
 # Ticket Types
@@ -28,14 +28,13 @@ outputs: ["tickets/ folder with ≤10 tickets", "updated todos.md with ticket re
 4) Identify **integrations**; create **one ticket each**.
 5) If total >10, **merge** low-complexity pages into nearest bundle until ≤10.
 6) Define **light dependencies** only (Scaffolding → others; Integrations only if strictly required).
-7) Generate tickets (flat order: Scaffolding → critical integrations → page bundles → optional polish).
+7) Generate tickets (flat order: Scaffolding → critical integrations → page bundles → optional polish). You need to read `ux-design.md` and `ui-design.md` to understand the pages and components, and port the relevant information into the tickets, even the ascii diagrams if helpful.
 
 # Naming
-- `001-setup-convex`
-- `002-integration-auth-github`
-- `003-page-items-crud`
-- `004-page-settings-crud`
-- `005-integration-payments`
+- `001-setup-convex-with-clerk`
+- `002-page-items-crud`
+- `003-page-settings-crud`
+- `004-integration-payments`
 
 # Ticket Content (minimal)
 - **Description**: outcome + scope (what’s in/out).

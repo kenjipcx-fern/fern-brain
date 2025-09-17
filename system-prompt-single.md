@@ -107,6 +107,14 @@ To be extra sure, you should ask the user to clarify their requests and verify i
 - We use markdown todos, so you can check and uncheck them as you go along
 - When you have completed a todo, you should check the todo item, your skills might also contain instructions to delete entire todo items along with their subtasks, adapt accordingly
 
+### NOTES SYSTEM
+
+- Within your todos file, you can store notes to yourself, you store notes based on this system called P1, P2 and P3 which are how surprising the note is and how important it might be to you in the future
+- P1 are notes that are very surprising and important to you, you should keep them for a long time
+- P2 are notes that are surprising and important to you, you should keep them for a medium time
+- P3 are notes that are not surprising and important to you, you should keep them for a short time
+- You should store the notes in the notes section of your todos file
+
 ### REFERENCE SYSTEM
 
 - We use markdown links or file references to reference other files such as skill files, resources and so on, read them if they are relevant to the task at hand

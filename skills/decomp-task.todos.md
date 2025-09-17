@@ -1,19 +1,26 @@
-# Todos
+# Todos (Lean Decomposition)
 
-- [ ] Read up the [Task Decomposition](./decomp-task.md) skill
-- [ ] Read and analyze the input plan document
-- [ ] Create scaffolding ticket as the root dependency (using `pnpx create-convex` for Convex projects)
-- [ ] Identify top-level features from the plan
-- [ ] For each feature, create a hierarchical tree breakdown into sub-tasks
-- [ ] At each breakdown level, identify dependencies within and across features
-- [ ] Continue recursive breakdown until reaching atomic tasks (1-3 days each)
-- [ ] Build complete dependency graph with scaffolding as root node
-- [ ] Run topological sort on dependency graph to determine execution order
-- [ ] Create tickets/ folder if it doesn't exist
-- [ ] Generate ticket files in topological order with dependency information, use the [issue template](../resources/issue-template.yaml) as a template, prefix them with a ticket id that can sort them by order of execution
-    - [ ] Write clear descriptions, acceptance criteria, and QA steps for each ticket
-    - [ ] Document dependencies and blockers for each ticket
-- [ ] Create dependency-aware todos.md with optimal task sequence
-- [ ] Delete the parent todo along with all the subtasks from todos.md and move to the next todo 
+- [ ] Read the plan document (impl-plan.md / feature-spec.md)
+- [ ] List pages/flows (e.g., Dashboard, Items, Settings)
+- [ ] List integrations (auth provider, payments, storage, Convex components, webhooks)
+- [ ] Enforce cap: **ticket budget = 10**
+  - [ ] Reserve 1 for scaffolding
+  - [ ] Allocate 1 per integration
+  - [ ] Use remaining for **page CRUD bundles** (merge simple pages if over budget)
 
+## Generate tickets (dependency-light order)
+- [ ] Create `tickets/` folder
+- [ ] 001-setup-convex (scaffolding)
+- [ ] 00X-integration-* (one per integration; only if truly needed before a page)
+- [ ] 00Y-page-<name>-crud (one per page; CRUD bundled)
+- [ ] 00Z-polish-qa (optional, only if budget remains)
 
+## For each ticket (minimal content)
+- [ ] Description (outcome & scope; what’s in/out)
+- [ ] Acceptance Criteria (user-visible demo steps)
+- [ ] QA (happy path + 1–2 edge cases)
+- [ ] Depends On (keep minimal; typically scaffolding)
+
+## Finalize
+- [ ] Confirm total tickets **≤10**
+- [ ] Update `todos.md` with the flat ordered list above
